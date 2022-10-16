@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>📚Quiz Application📚</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- FONTAWESOME LINK FOR ICONS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!--LINK THE BOOTSTRAP CSS CODE-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+	<section class="hero">
+		<div class="hero_bg">
+			<img src="bg2.webp" class="hero_bg_img">
+		</div>
+		<div class="hero_bg_overlay"></div>
+	</section>
+	<!-- START QUIZ BUTTON -->
+
+	<div class="start_btn"><button>Start Game</button></div>
+
+	<!-- INSTRUCTIO BOX -->
+	<div class="info_box">
+		<div class="info_title">
+			<span>Instructions</span>
+		</div>
+		<div class="info_list">
+			<div class="info">-> The Quiz time for each question is <span>15 Seconds</span></div>
+			<div class="info">-> Once you start your quiz, You couldn't exit it</div>
+			<div class="info">-> Once you select the answer, you cannot reselect it</div>
+			<div class="info">-> You couldn't select answer once time goes off</div>
+			<div class="info">-> Your points will be calculated on the basis of correct answers</div>
+		</div>
+		<div class="buttons">
+			<button class="quit">Exit Quit</button>
+			<button class="restart">Continue</button>
+		</div>
+	</div>
+
+	<!-- QUESTIONS -->
+	<div class="quiz_box">
+		<!-- HEADER-->
+		<header>
+			<div class="title">📚Quiz Application📚</div>
+			<div class="timer">
+				<div class="timer_sec">15</div>
+				<div class="time_text">Sec Left..</div>
+			</div>
+			<div class="time_line"></div>
+		</header>
+		<!-- CONTENTS -->
+		<section>
+			<div class="qns_text">
+			</div>
+			<div class="options_list">
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<footer>
+			<div class="total_qns">
+			</div>
+			<button class="next_btn">Next Qns</button>
+		</footer>
+	</div>
+
+	<!-- RESULT BOX -->
+	<div class="result_box">
+		<div class="icon">
+			<i class="fas fa-crown"></i>
+		</div>
+		<div class="complete_text">You've completed</div>
+		<div class="score_text"></div>
+		<div class="buttons">
+			<button class="restart">Replay Quiz</button>
+			<button class="quit">Quit Game</button>
+		</div>
+	</div>
+
+	<!-- JS LINK -->
+	<script src="script.js"></script>
+	<script src="qns.js"></script>
+	<!--LINK THE BOOTSTRAP JS CODE-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
